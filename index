@@ -1,0 +1,59 @@
+<?php
+require "common.php";
+if (isset($_SESSION['email'])) {
+ header('location: products.php');
+}
+
+?>
+
+<html>
+    <head>
+        <title>Index page</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+        <script type="text/javascript" src="bootstrap/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <link href="assignment2css.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <?php
+        include "header.php";
+        ?>
+        <div id="banner_image">
+            <div class="container">
+                <center>
+                <div id="banner_content">
+                    <h1>We sell lifestyle</h1>
+                        <p>Flat 40% OFF on premium brands</p>
+                    <a href="productspage.html" class="btn btn-danger btn-lg active" target="blank">Shop Now</a>
+                </div>
+                </center>
+            </div>
+        </div>
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <a href="productspage.html" class="thumbnail"><img src="img/1.jpg" alt="Camera" class="img-responsive"/></a>
+                    <div class="caption"><h4>Camera</h4><p>Choose among the best available in the world.</p></div>
+                </div>
+            </div>
+                <div class="col-sm-4">
+                <div class="thumbnail">
+                    <a href="productspage.html" class="thumbnail"> <img src="img/7.jpg" alt="Watches" class="img-responsive"/></a>
+                    <div class="caption"><h4>Watches</h4><p>Original watches from the best brands</p></div>
+                </div>
+            </div>
+                <div class="col-sm-4">
+                <div class="thumbnail">
+                    <a href="productspage.html" class="thumbnail"><img src="img/8.jpg" alt="Shirts" class="img-responsive"/></a>
+                    <div class="caption"><h4>Shirts</h4><p>Our exquisite collection of shirts.</p></div>
+                </div>
+                </div>
+        </div>
+        </div>
+        
+        <?php
+        include"footer.php";
+        ?>
+    </body>
+</html>
